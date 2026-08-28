@@ -1,2 +1,24 @@
+# IDE / editor
 .idea/
 .vscode/
+.github/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Java build output
+*.class
+target/
+build/
+out/
+
+# Logs / temp
+*.log
+*.tmp
+
+# Secrets / env
+.env
+*.pem
+*.key
