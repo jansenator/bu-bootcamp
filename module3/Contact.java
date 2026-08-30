@@ -4,8 +4,8 @@
  * and a readable toString() for printing.
  *
  * @author Jansen Rensma
- * Note: a GitHub Copilot "learn" agent was referenced while writing this
- * code; it teaches the concepts involved rather than providing answers.
+ *         Note: a GitHub Copilot "learn" agent was referenced while writing
+ *         this code; it teaches the concepts involved rather than providing answers.
  */
 public class Contact {
     // Declarations
@@ -19,8 +19,22 @@ public class Contact {
     }
 
     // Getters
-    public String getName() { return name; }
-    public String getPhone() { return phone; }
+    public String getName() {
+        return name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    // Setters
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 
     // what to print when an instance of Contact using toString()
     @Override

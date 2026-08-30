@@ -4,6 +4,17 @@ import java.util.ArrayList;
 import java.util.Arrays; 
  
 public class GradeAnalyzerTest { 
+
+    @Test
+    void calculateAverage_returnsCorrectAverage_listOfTen() {
+        ArrayList<Integer> scores = new ArrayList<>(Arrays.asList(
+                72, 85, 91, 67, 88, 94, 76, 83, 98, 80
+        ));
+
+        double expectedAverage = 83.4;
+
+        assertEquals(expectedAverage, GradeAnalyzer.calculateAverage(scores));
+    }
  
     @Test
     void calculateAverage_returnsZero_whenListIsEmpty() { 
@@ -34,5 +45,7 @@ public class GradeAnalyzerTest {
     void calculateAverage_handlesAllSameValues() { 
         ArrayList<Integer> scores = new ArrayList<>(Arrays.asList(88, 88, 88)); 
         assertEquals(88.0, GradeAnalyzer.calculateAverage(scores)); 
+
+        
     }
 }
